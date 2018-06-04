@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple Server</title>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class='container'>
+    <div class='jumbotron text-center'>
+      <h1>Your Inner Cryptid</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h2>We Need Some Data From You</h2>
+            <div class="form-group">
+              <div>
+                  <label for="name">Name (Required)</label>
+                  <input type="text" class="validate" placeholder="Your Name Here" id="userName">
+              </div>
+                
+              <div>
+                  <label for="photo">Link to Photo Image (Required)</label>
+                  <input type="file" class="form-control-file" placeholder="Photo Link Here" id="userPhoto">
+              </div>
+              <h2>Survey Questions</h2>
+              <div>
+                <h3>Question 1</h3>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question1"  value="1">
+                  <label class="form-check-label" for="inlineRadio1">Not even if you would pay me </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question1" value="2">
+                  <label class="form-check-label" for="inlineRadio2">Unlikely </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question1"  value="3">
+                  <label class="form-check-label" for="inlineRadio1">Somewhere In-Between</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question1" value="4">
+                  <label class="form-check-label" for="inlineRadio2">Likely</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question1"  value="5">
+                  <label class="form-check-label" for="inlineRadio1">In a Heart Beat</label>
+                </div>
+
+                <h3>Question 2</h3>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question2"  value="1">
+                  <label class="form-check-label" for="inlineRadio1">Not even if you would pay me </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question2" value="2">
+                  <label class="form-check-label" for="inlineRadio2">Unlikely </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question2"  value="3">
+                  <label class="form-check-label" for="inlineRadio1">Somewhere In-Between</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question2" value="4">
+                  <label class="form-check-label" for="inlineRadio2">Likely</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question2"  value="5">
+                  <label class="form-check-label" for="inlineRadio1">In a Heart Beat</label>
+                </div>
+
+                <h3>Question 3</h3>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question3"  value="1">
+                  <label class="form-check-label" for="inlineRadio1">Not even if you would pay me </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question3" value="2">
+                  <label class="form-check-label" for="inlineRadio2">Unlikely </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question3"  value="3">
+                  <label class="form-check-label" for="inlineRadio1">Somewhere In-Between</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question3" value="4">
+                  <label class="form-check-label" for="inlineRadio2">Likely</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="question3"  value="5">
+                  <label class="form-check-label" for="inlineRadio1">In a Heart Beat</label>
+                </div>
+             
+    
+        <!-- Button trigger modal -->
+    <div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" type="submit" name="action" id="submitButton">
+            Submit
+          </button>
+    </div>
+  
+    </div>
+        
+              
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Your Result</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <h5 id="userMatch">Test</h5>
+                  <img id="userMatchImage" width="450" src="">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+</body>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+
+$('#submitButton').on('click', function(event) {
+event.preventDefault();
+
+var userInput = {
+  name: $('#userName').val().trim(),
+  photo: $('#userPhoto').val().trim(),
+  answers:[
+					$('input[type="radio"][name="question1"]:checked').val().trim(),
+					$('input[type="radio"][name="question2"]:checked').val().trim(),
+          $('input[type="radio"][name="question3"]:checked').val().trim()
+]
+};
+
+console.log(userInput);
+console.log(userInput.answers);
+$.post('/survey', userInput)
+.done(function(data){
+  console.log('response = ' + JSON.stringify(data));
+  console.log(data.matchName);
+  $('#userMatch').html(data.matchName);
+  $('#userMatchImage').attr('src', data.matchImage);
+
+
+
+  });
+});
+
+
+  });
+
+
+
+</script>
+
+</html>
