@@ -22,17 +22,25 @@
         <div class="row">
             <h2>We Need Some Data From You</h2>
             <div class="form-group">
-              <div>
-                  <label for="name">Name (Required)</label>
-                  <input type="text" class="validate" placeholder="Your Name Here" id="userName">
+              <div class="row">
+                  <div class="col-lg-6">
+                      <label for="name">Name (Required)</label>
+                      <input type="text" class="validate" placeholder="Your Name Here" id="userName">
+                  </div>
+
+                  <div class="col-lg-6">
+                    <label for="email">Email (Required)</label>
+                    <input type="text" class="validate" placeholder="Your Name Here" id="email">
+                </div>
+                    
+                  <!-- <div class="col-lg-6">
+                      <label for="photo">Link to Photo Image (Required)</label>
+                      <input type="file" class="form-control-file" placeholder="Photo Link Here" id="userPhoto">
+                  </div> -->
               </div>
-                
-              <div>
-                  <label for="photo">Link to Photo Image (Required)</label>
-                  <input type="file" class="form-control-file" placeholder="Photo Link Here" id="userPhoto">
-              </div>
+            
               <h2>Survey Questions</h2>
-              <div>
+              <div class>
                 <h4>How likely are you to finish a good song before leaving your car? </h4>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="question1"  value="1">
@@ -291,7 +299,7 @@ event.preventDefault();
 
 var userInput = {
   name: $('#userName').val().trim(),
-  photo: $('#userPhoto').val().trim(),
+  email: $('#email').val().trim(),
   answers:[
 					$('input[type="radio"][name="question1"]:checked').val().trim(),
 					$('input[type="radio"][name="question2"]:checked').val().trim(),
